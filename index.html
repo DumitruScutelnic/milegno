@@ -1,7 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- media per farlo diventare risponsive, ovvero adatabile ai dispositivi mobile. 
+    max-width:500px indica di usare il mobile.css fino alla dimensione di 500 pixel, sopra usa style.css -->
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="/css/mobile.css">
+    <script src="https://kit.fontawesome.com/33c9574a50.js" crossorigin="anonymous"></script>
+    <title>Pane Buono</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- NavBar -->
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">Pane Buono</a></h1>
+                <ul> <!-- list item e con la classe current vado a evendenziare il pulcante a secondo dove mi troco-->
+                    <li><a class="current" href="index.html">Home</a></li> 
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign-Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Section 1-->
+    <section id="showcase">
+        <div class="container">
+            <h1><span class="color-primary">Odora</span> la natura</h1>
+            <p>Il pane artigianale fatto con le mani. Cotto nel forno a legna. </p>
+            <a class="btn" href="about.html">Il nostro panificio</a>
+        </div>
+    </section>
+    <!-- Section 2-->
+    <section id="showcase-2">
+        <div class="container">
+            <div class="image"></div>
+            <div class="section-text">
+                <h1><span class="color-primary">La storia</span> del nostro pane.</h1>
+                <p class="text-center">
+                    Il nostro pane è fato con la migliore miscela di farine integrali. <br/>
+                    Il pane viene levitato per più di 48 ore, per farlo diventare sofice e crocante.
+                </p>
+                <a class="btn btn-light" href="">Leggi di più</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section-3 -->
+    <section id="showcase-3">
+        <div class="box"> 
+            <!-- Per creare un'icona vai al sito https://fontawesome.com/icons/hotel?style=solid
+            e cerca il tipo di icona che ti serve, dopo copia il link fas fa-.... -->
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Grande location</h3>
+            <p>
+                Locale moderno e alla lavanguardia. <br/>
+                Ambiente caldo e accogliente.
+            </p>
+        </div>
+        <div class="box box-orange"> 
+            <i class="fas fa-utensils fa-3x"></i>
+            <h3>Pane artigianale</h3>
+            <p>
+                Il pane fatto ogni giorno per portare il meglio sulla tavolla dei nostri clienti.
+            </p>
+        </div>
+        <div class="box"> 
+            <i class="fas fa-tag fa-3x"></i>
+            <h3>Qualità a ottimo prezzo</h3>
+            <p>
+                Alta qulita dei prodotti primi ad un ottimo prezzo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">Pane Buono &copy; 2020, All rights reserved.</footer>
+
+     <!-- Scroll Up  -->
+    <a href="" class="scrollUp">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <script>
+        //alert("Ciao da JavaScript!"); 
+        //document.write("Ciao da JavaScript!");
+        const scrollUp = document.querySelector('.scrollUp');
+        window.addEventListener('scroll', () =>{
+            if(window.pageYOffset > 100){
+                scrollUp.classList.add("active");
+            }else{
+                scrollUp.classList.remove("active");
+            }
+        });
+
+    </script>   
 </body>
 </html>

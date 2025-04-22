@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Header NavBar */
+#navbar{
+    background: #333333;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container ul{
+    display: flex;
+    padding-right: 1rem;
+}
+
+#navbar .container ul li{
+    list-style: none;
+}
+
+#navbar .container ul li a{
+    padding: 20px;
+    display: block;
+}
+
+#navbar .container h1{
+    text-transform: uppercase;
+    padding-left: 100px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current{
+    background: #555555;
+    color: orange;
+}
+
+/* Utility */
+.btn{
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    background: #333333;
+    padding: 14px 18px;
+    border: none;
+}
+.btn-light{
+    background: #bbbbbb;
+    color: #eeeeee;
+}
+
+.btn:hover{
+    background: orange;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Section 1*/
+#showcase .container{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background: url('../img/pane.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase .container h1{
+    color: #ffffff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+#showcase .container p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.color-primary{
+    color: orange;
+}
+
+/* Setion 2 */
+#showcase-2 .container{
+    display: flex;
+    height: 450px;
+}
+
+
+#showcase-2 .container .image{
+    background:  url('../img/pane_cereali.jpg') no-repeat center center/cover;
+    flex: 1;
+}
+#showcase-2 .container .section-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #ffffff;
+    background: #333333;
+    justify-content: center;
+    align-items: center; 
+    /* text-align: center; */
+}
+
+#showcase-2 .container .section-text h1{
+    padding-bottom: 20px;
+}
+
+#showcase-2 .container .section-text p{
+    padding-bottom: 20px;
+}
+
+/* Section-3 */
+#showcase-3{
+    display: flex;
+    /* height: 300px; con questo non vedo il footer!!!*/ 
+    align-items: center;
+    text-align: center;
+}
+
+.box{
+    background: #ffffff;
+    flex: 1;
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-orange{
+    background: orange;
+}
+
+#showcase-3 i{
+    padding-bottom: 20px;
+}
+#showcase-3 h3{
+    padding-bottom: 30px;
+}
+
+/* About-Info */
+#about-info .container{
+    display: flex;
+    justify-content: center; 
+    padding: 50px 0;
+}
+
+#about-info img{
+    width: 400px; 
+    border-radius: 50%;
+    margin: auto;
+}
+
+#about-info .info-left{
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+#about-info .info-left h1{
+    font-size: 2rem;
+    padding-bottom: 1.5rem ;
+}
+
+#about-info .info-left p{
+     width: 80%; 
+    padding-bottom: 1.5rem;
+}
+
+#about-info .image-about{
+    flex: 1; 
+    justify-content: center;
+}
+ 
+/* Testimonials */
+#testimonials .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 500px;
+    background: url('../img/shop.jpg') no-repeat center center/cover;
+}
+#testimonials .container h2{
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;   
+}
+#testimonials .container p{
+    width: 80%;
+}
+
+#testimonials .container .testimonial-message{
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    opacity: 0.9;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testimonials .testimonial-message img{
+    width: 100px; 
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* Contact */
+#contact-forum {
+    padding: 2rem 5rem;
+}
+
+#contact-forum .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+#contact-forum  h1{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+#contact-forum p{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+#contact-forum button{
+    margin-bottom: 1re2;
+}
+#contact-forum .form-group{
+    font-size: 18px;
+    margin: 10px 20px 20px;
+}
+
+#contact-forum input, 
+#contact-forum textarea{
+    font-size: 16px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+}
+#contact-forum label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact-forum textarea{
+    height: 200px;
+}
+#contact-forum input:focus,
+#contact-forum textarea:focus{
+    outline: none;
+    border-color: orange;
+}
+
+/* Contact info */
+#contact-info .container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    background: #222222;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+#contact-info i,
+#contact-info h3{
+    margin-bottom: 1rem;
+}
+
+/* Login */
+#login {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(../img/kristaps-grundsteins.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 95px 50px;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    left: calc(50% - 70px);
+}
+.login-box h1{
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.login-box input[type="button"]{ /*input[type="submit"]*/
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="button"]:hover{
+    cursor: pointer;
+    background: #39dc79;
+    color: black;
+}
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.login-box a:hover{
+    color: #39dc79;
+}
+
+/* SIGN UP */
+
+#bars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 6px;
+    width: 220px;
+    margin: 8px 0;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#bars div{
+    width: 0%;
+    height: inherit;
+    border-radius: inherit;
+    transition: 0.4s;
+}
+
+#bars.weak div{
+    background: #bc2b38; 
+    width: 33.33%;
+}
+
+#bars.medium div {
+    background: #d36f30;
+    width: 66.66%;
+}
+
+#bars.strong div {
+    background: #1eb965;
+    width: 100%;
+}
+
+
+/* Footer */
+#footer{
+    background: #333333;
+    padding: 30px 0;
+    color: #ffffff;
+    text-align: center;
+} 
+
+
+.scrollUp{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    background: crimson;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+.scrollUp.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+
