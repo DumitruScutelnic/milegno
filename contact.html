@@ -77,7 +77,7 @@
     </section>
     <section id="contact-forum">
         <div class="container">
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify>
                 <input type="hidden" name="form-name" value="contact">
 
                 <!-- Anti-bot (honeypot) -->
@@ -86,13 +86,13 @@
                 </p>
 
                 <p>
-                    <label for="name">Nome<br><input type="text" name="name" required></label>
+                    <label >Nome<br><input type="text" name="name" required></label>
                 </p>
                 <p>
-                    <label  for="email">Email<br><input type="email" name="email" required></label>
+                    <label >Email<br><input type="email" name="email" required></label>
                 </p>
                 <p>
-                    <label for="message" >Messaggio<br><textarea name="message" required></textarea></label>
+                    <label >Messaggio<br><textarea name="message" required></textarea></label>
                 </p>
                 <p><button class="btn" type="submit">Invia</button></p>
             </form>
