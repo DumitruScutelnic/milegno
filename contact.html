@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,30 @@
     <link rel="stylesheet" media="screen and (max-width:500px)" href="./css/mobile.css">
     <script src="https://kit.fontawesome.com/33c9574a50.js" crossorigin="anonymous"></script>
     <title>Pane Buono</title>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+        
+            const formData = new FormData(this);
+        
+            fetch("contact.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("response").innerHTML = data;
+                document.getElementById("contact-form").reset();
+            })
+            .catch(error => {
+                document.getElementById("response").innerHTML = "Errore durante l'invio del messaggio.";
+                console.error("Errore AJAX:", error);
+            });
+        });
+    });
+    </script>
 </head>
 <body>
      <!-- NavBar -->
@@ -14,7 +38,7 @@
         <nav id="navbar">
             <div class="container">
                 <h1 class="logo"><a href="index.html">Pane Buono</a></h1>
-                <ul> <!-- list item e con la classe current vado a evendenziare il pulcante a secondo dove mi troco-->
+                <ul> <!-- list item con la classe current evidenzia il pulsante in base alla pagina attuale -->
                     <li><a href="index.html">Home</a></li> 
                     <li><a href="about.html">About</a></li>
                     <li><a class="current" href="contact.html">Contact</a></li>
@@ -24,32 +48,28 @@
             </div>
         </nav>
     </header>
+
     <!-- Section 1-->
     <section id="contact-forum">
         <div class="container">
-            <h1 class="color-primary">Contataci</h1>
+            <h1 class="color-primary">Contattaci</h1>
             <p>Noi ti risponderemo appena possibile.</p>
-            <form method="get" action="contact.php">
+
+            <form id="contact-form">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Nome</label>
                     <input type="text" name="name" id="name" placeholder="Il tuo nome" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="La tua mail" required>
-                   <!--  <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Enter your email"
-                        required pattern='/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'
-                    > -->
                 </div>
                 <div class="form-group">
                     <label for="message">Messaggio</label>
-                    <textarea name="message" id="message" placeholder="la tuo messaggio" required></textarea>
+                    <textarea name="message" id="message" placeholder="Il tuo messaggio" required></textarea>
                 </div>
-                <button class="btn" type="submit">Submit</button>
+                <button class="btn" type="submit">Invia</button>
+                <p id="response"></p>
             </form>
         </div>    
     </section>
@@ -64,18 +84,18 @@
             </div>
             <div class="info-box">
                 <i class="fas fa-phone fa-3x"></i>
-                <h3>Phone number</h3>
+                <h3>Telefono</h3>
                 <p>3341521410</p>
             </div>
             <div class="info-box">
                 <i class="fas fa-envelope fa-3x"></i>
-                <h3>Email addres</h3>
+                <h3>Email</h3>
                 <p>info.panebuono@gmail.com</p>
             </div>
         </div>
     </section>
 
-<!-- Footer -->
-<footer id="footer">Pane Buono &copy; 2020, All rights reserved.</footer>
+    <!-- Footer -->
+    <footer id="footer">Pane Buono &copy; 2020, Tutti i diritti riservati.</footer>
 </body>
 </html>
