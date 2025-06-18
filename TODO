@@ -1,6 +1,17 @@
+Box: - ❍ ❑ ■ ⬜ □ ☐ ▪ ▫ – — ≡ → › [] [ ]
+Done: ✔ ✓ ☑ + [x] [X] [+]
+Cancelled: ✘ x X [-]
+@critical @high @low @today @1h `code`
 
+Sviluppo:
+    [+] Favicon
+    [+] Logo @critical
 
-[] Favicon
-[] Logo
-[] Documentation
-[] License file
+Documentation:
+    [ ] License file @low 
+    [ ] Add license information @low 
+
+Altro:
+    [ ] Add additional information
+    [ ] Include contact details
+    [ ] Provide links to social media
