@@ -1,144 +1,314 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="it">
+<html lang="it">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Milegno</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="L'impresa edile Milegno srl di Verona si occupa di costruzioni e ristrutturazioni edili dal 2009, con un'esperienza pluriennale nell'ambito dell'isolamento termico.">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta
+        content="L'impresa edile Milegno srl di Verona si occupa di costruzioni e ristrutturazioni edili dal 2009, con un'esperienza pluriennale nell'ambito dell'isolamento termico."
+        name="description">
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.milegno.it/">
-    <meta name="keywords" content="Impresa edile, Ristrutturazioni, Ristrutturazioni edili, Ristrutturazione appartamenti, Costruzioni edili, Costruzioni immobili">
-    <meta name="description" content="Milegno srl è un'Impresa edile specializzata nella costruzione di villette, abitazioni e condomini a Verona e provincia. Contattaci per informazioni!">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Impresa edile | Verona (VR) | Milegno srl">
-    <meta name="twitter:description" content="Milegno srl è un'Impresa edile specializzata nella costruzione di villette, abitazioni e condomini a Verona e provincia. Contattaci per informazioni!">
-    <meta property="og:description" content="Milegno srl è un'Impresa edile specializzata nella costruzione di villette, abitazioni e condomini a Verona e provincia. Contattaci per informazioni!">
-    <meta property="og:title" content="Impresa edile | Verona (VR) | Milegno srl">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&amp;family=Roboto:wght@500;700;900&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <script type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "MILEGNO srl",
+        "url" : "https://www.milegno.it/"
+    }
+    </script>
+    <meta name="keywords"
+        content="Impresa edile, Ristrutturazioni, Ristrutturazioni edili, Ristrutturazione appartamenti, Costruzioni edili, Costruzioni immobili" />
+    <meta name="description"
+        content="Milegno srl è un'Impresa edile specializzata nella costruzione di villette, abitazioni e condomini a Verona e provincia. Contattaci per informazioni!" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Impresa edile | Verona (VR) | Milegno srl" />
+    <meta name="twitter:description"
+        content="Milegno srl è un'Impresa edile specializzata nella costruzione di villette, abitazioni e condomini a Verona e provincia. Contattaci per informazioni!" />
+    <meta property="og:description"
+        content="Milegno srl è un'Impresa edile specializzata nella costruzione di villette, abitazioni e condomini a Verona e provincia. Contattaci per informazioni!" />
+    <meta property="og:title" content="Impresa edile | Verona (VR) | Milegno srl" />
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/lib/animate/animate.min.css">
-    <link rel="stylesheet" href="assets/css/lib/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/lib/lightbox/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/css/style.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="bg-white position-fixed top-50 start-50 d-flex translate-middle w-100 vh-100 justify-content-center align-items-center show" id="spinner">
-        <div class="text-primary spinner-border" style="width:3rem;height:3rem;" role="status"><span class="sr-only">Loading...</span></div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
+    <!-- Spinner End -->
+
+        <!-- Topbar Start -->
     <div class="container-fluid bg-dark p-0">
         <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 text-start px-5">
-                <div class="d-inline-flex h-100 align-items-center me-4"><a href="https://www.google.com/maps?q=Via+Michelotto+Attendolo,+15,+37135+Verona" target="_blank"><small class="text-primary me-2 fa fa-map-marker-alt text-white"></small><small class="text-white">Via Michelotto Attendolo, 15 - 37135 Verona (VR)</small></a></div>
-                <div class="d-inline-flex h-100 align-items-center"><small class="text-primary me-2 far fa-clock text-white"></small><small class="text-white">Lun - Ven: 08.30 - 18.00 | Sab - Dom: Chiuso</small></div>
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <a href="https://www.google.com/maps?q=Via+Michelotto+Attendolo,+15,+37135+Verona" target="_blank">
+                        <small class="fa fa-map-marker-alt text-primary me-2 text-white"></small>
+                        <small class="text-white">Via Michelotto Attendolo, 15 - 37135 Verona (VR)</small></a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2 text-white"></small>
+                    <small class="text-white">Lun - Ven: 08.30 - 18.00 | Sab - Dom: Chiuso</small>
+                </div>
             </div>
-            <div class="col-lg-5 text-end px-5">
-                <div class="d-inline-flex h-100 align-items-center me-4"><a href="mailto:milegnosrl@gmail.com?subject=Informazione"><small class="text-primary me-2 fa fa-envelope text-white"></small><small class="text-white">milegnosrl@gmail.com</small></a></div>
-                <div class="d-inline-flex h-100 align-items-center me-4"><a><small class="text-primary me-2 fa-solid fa-phone text-white"></small><small class="text-white">+390454943364</small></a></div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <a href="mailto:milegnosrl@gmail.com?subject=Informazione">
+                        <small class="fa fa-envelope text-primary me-2 text-white"></small>
+                        <small class="text-white">milegnosrl@gmail.com</small></a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <a href="tel:+390454943364">
+                        <small class="fa-solid fa-phone text-primary me-2 text-white"></small>
+                        <small class="text-white">+390454943364</small></a>
+                </div>
+                <!-- <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div> -->
             </div>
         </div>
     </div>
-    <nav class="bg-white p-0 navbar navbar-expand-lg navbar-light sticky-top"><a class="navbar-brand d-flex align-items-center px-4 px-lg-5" href="index.html"><img src="assets/img/img/milegno_trasp.png" width="150" height="50"></a><button class="navbar-toggler me-4" data-bs-toggle="collapse" type="button" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <!-- <h2 class="m-0 text-primary">Milegno</h2> -->
+            <img src="./img/milegno_trasp.png" width="150" height="50">
+            <!-- <div class="m-0 text-primary" style="max-width: 80%; height: auto; overflow: hidden;">
+                <img src="./img/milegno_logo_TRASP.png" alt="" style="max-width: 100%; height: auto;">
+            </div> -->
+        </a>
+
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="p-4 p-lg-0 ms-auto navbar-nav"><a class="nav-item nav-link" href="index.html#">Home</a><a class="nav-item nav-link" href="index.html#about">Chi Siamo</a><a class="nav-item nav-link" href="index.html#services">Servizi</a><a class="nav-item nav-link" href="index.html#project">Progetti</a><a class="nav-item nav-link" href="index.html#contatti">Contatti</a></div><a class="btn btn-primary rounded-0 d-none d-lg-block px-lg-5 py-4" role="button" href="index.html#quote">PREVENTIVO<i class="fas fa-arrow-right ms-3"></i></a>
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html#" class="nav-item nav-link">Home</a>
+                <a href="index.html#about" class="nav-item nav-link">Chi Siamo</a>
+                <a href="index.html#services" class="nav-item nav-link">Servizi</a>
+                <a href="index.html#project" class="nav-item nav-link">Progetti</a>
+                <!-- <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="project.html" class="nav-item nav-link">Project</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="feature.html" class="dropdown-item">Feature</a>
+                        <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> 
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                -->
+                <a href="index.html#contatti" class="nav-item nav-link">Contatti</a>
+            </div>
+            <a href="index.html#quote" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">PREVENTIVO<i
+                    class="fa fa-arrow-right ms-3"></i></a>
         </div>
+
     </nav>
-    <div class="container-fluid mb-5 py-5 page-header">
-        <div class="py-5 container">
-            <h1 class="display-3 text-white mb-3 bounce animated slideInDown">Nostri Servizi</h1>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Nostri Servizi</h1>
+            <!-- <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">404 Error</li>
+                </ol>
+            </nav> -->
         </div>
     </div>
-    <div class="container-fluid bg-light overflow-hidden px-lg-0 my-5">
-        <div class="px-lg-0 container feature">
+    <!-- Page Header End -->
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 py-5 feature-text wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="p-lg-5 ps-lg-0">
                         <h6 class="text-primary">LAVORI CHIAVI IN MANO</h6>
                         <h1 class="mb-4">COSTRUZIONI EDILI E RISTRUTTURAZIONI</h1>
-                        <p class="mb-4 pb-2">Milegno Srl è un'azienda di costruzione edile nata nel 2009 a Verona. Si occupa della realizzazione di nuove costruzioni, ristrutturazioni e manutenzioni. Ciò che rende Milegno srl una ditta differente rispetto alle altre è che ha un'impronta moderna, poiché si concentra sulle nuove tecniche dell'edilizia volte all'<b>efficientamento degli stabili.</b></p>
-                        <p class="mb-4 pb-2"> Inoltre, Milegno Srl offre anche un servizio completo di ristrutturazione di appartamenti, abitazioni e complessi commerciali. Grazie all'esperienza maturata negli anni, siamo in grado di realizzare qualsiasi tipo di ristrutturazione, dalla più semplice alla più complessa. </p>
-                        <p class="mb-4 pb-2"> I nostri servizi comprendono: </p>
-                        <p><i class="fas fa-check-circle text-primary me-3"></i>l'elaborazione di un progetto personalizzato;</p>
-                        <p><i class="fas fa-check-circle text-primary me-3"></i>il coordinamento e la direzione dei lavori;</p>
-                        <p><i class="fas fa-check-circle text-primary me-3"></i>la fornitura di tutti i materiali necessari;</p>
-                        <p><i class="fas fa-check-circle text-primary me-3"></i>il montaggio e la posa in opera delle strutture.</p>
-                        <p></p>
+                        <p class="mb-4 pb-2">Milegno Srl è un'azienda di costruzione edile nata nel 2009 a Verona. Si
+                            occupa della realizzazione di nuove costruzioni, ristrutturazioni e manutenzioni. Ciò che
+                            rende Milegno srl una ditta differente rispetto alle altre è che ha un'impronta moderna,
+                            poiché si concentra sulle nuove tecniche dell'edilizia volte all'<b>efficientamento degli
+                                stabili.</b>
+                        </p>
+                        <p class="mb-4 pb-2">
+                            Inoltre, Milegno Srl offre anche un servizio completo di ristrutturazione di appartamenti,
+                            abitazioni e complessi commerciali. Grazie all'esperienza maturata negli anni, siamo in
+                            grado di realizzare qualsiasi tipo di ristrutturazione, dalla più semplice alla più
+                            complessa.
+                        </p>
+                        <p class="mb-4 pb-2">
+                            I nostri servizi comprendono:
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>l'elaborazione di un progetto
+                            personalizzato;</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>il coordinamento e la direzione dei
+                            lavori;</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>la fornitura di tutti i materiali
+                            necessari;</p>
+                        <p><i class="fa fa-check-circle text-primary me-3"></i>il montaggio e la posa in opera delle
+                            strutture.</p>
+                        </p>
+
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height:400px;">
-                    <div class="position-relative h-100"><img class="img-fluid position-absolute w-100 h-100" src="assets/img/img/casa.jpeg" style="object-fit:cover;" alt=""></div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/casa.jpeg"
+                            style="object-fit: cover;" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-light overflow-hidden px-lg-0 my-5" id="service_isolamento">
-        <div class="px-lg-0 container about">
+
+    <div id="service_isolamento" class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height:400px;">
-                    <div class="position-relative h-100"><img class="img-fluid position-absolute w-100 h-100" src="assets/img/img/isTermico.jpeg" style="object-fit:cover;" alt=""></div>
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/isTermico.jpeg"
+                            style="object-fit: cover;" alt="">
+                    </div>
                 </div>
-                <div class="col-lg-6 py-5 about-text wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <h6 class="text-primary">COIBENTAZIONE DI PARETI, TETTI E SOTTOTETTI</h6>
                         <h1 class="mb-4">ISOLAMENTO TERMICO</h1>
-                        <p>Tra le nostre specializzazioni ci sono: l'isolamento termico con insufflaggio in fiocchi di cellulosa, la realizzazione di coperture e tetti in legno e le ristrutturazioni complete di appartamenti.</p>
-                        <p>Per l'ottimizzazione dell'efficienza termica studiamo e posiamo isolamento su pareti e sottotetti con insufflaggio in fiocchi di cellulosa.</p>
-                        <p>Milegno Srl è un'azienda leader nell'isolamento termico con insufflaggio in fiocchi di cellulosa. Grazie all'utilizzo di questa tecnica, riusciamo a garantire un ottimo isolamento termico agli edifici, migliorandone anche le prestazioni energetiche.</p>
+                        <p>Tra le nostre specializzazioni ci sono: l'isolamento termico con insufflaggio in fiocchi di
+                            cellulosa, la realizzazione di coperture e tetti in legno e le ristrutturazioni complete di
+                            appartamenti.</p>
+                        <p>Per l'ottimizzazione dell'efficienza termica studiamo e posiamo isolamento su pareti e
+                            sottotetti con insufflaggio in fiocchi di cellulosa.</p>
+                        <p>Milegno Srl è un'azienda leader nell'isolamento termico con insufflaggio in fiocchi di
+                            cellulosa. Grazie all'utilizzo di questa tecnica, riusciamo a garantire un ottimo isolamento
+                            termico agli edifici, migliorandone anche le prestazioni energetiche.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-light overflow-hidden px-lg-0 my-5">
-        <div class="px-lg-0 container feature">
+
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 py-5 feature-text wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="p-lg-5 ps-lg-0">
                         <h6 class="text-primary">ESTETICA E SOLIDITÀ PER COPERTURE STABILI E DURATURE</h6>
                         <h1 class="mb-4">COPERTURE E TETTI IN LEGNO</h1>
-                        <p class="mb-4 pb-2">Milegno Srl è un'azienda di costruzione edile che da anni lavora nel settore dell’edilizia e, inizialmente, nasce come ditta di coperture e tetti in legno. </p>
-                        <p> Ancora oggi, si occupa della realizzazione di nuove coperture, ristrutturazioni e manutenzioni di tetti in legno, sottotetti e tettoie. </p>
+                        <p class="mb-4 pb-2">Milegno Srl è un'azienda di costruzione edile che da anni lavora nel
+                            settore dell’edilizia e, inizialmente, nasce come ditta di coperture e tetti in legno.
+                        </p>
+                        <p> Ancora oggi, si occupa della realizzazione di nuove coperture, ristrutturazioni e
+                            manutenzioni di tetti in legno, sottotetti e tettoie.
+                        </p>
                         <p>Tra le nostre specializzazioni ci sono la realizzazione di coperture e tetti in legno e le ristrutturazioni complete di tetti.</p>
                         <p>Il legno è un materiale naturale che viene utilizzato da migliaia di anni nella costruzione di edifici. È un materiale <b>ecologico</b>, <b>resistente</b> e <b>isolante</b>.</p>
                         <p>Le nostre coperture e i nostri tetti in legno sono perfetti per garantire il massimo comfort abitativo.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height:400px;">
-                    <div class="position-relative h-100"><img class="img-fluid position-absolute w-100 h-100" src="assets/img/img/tetti.jpeg" style="object-fit:cover;" alt=""></div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/tetti.jpeg"
+                            style="object-fit: cover;" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-body mt-5 pt-5 bg-orange footer wow fadeIn" id="footer" data-wow-delay="0.1s">
+
+    <!-- Feature End -->
+
+
+    <!-- Footer Start -->
+    <div id="footer" class="container-fluid bg-orange text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="copyright">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start text-white mb-3 mb-md-0"><span> © </span><a href="#">MILEGNO SRL</a><span> - P.I. 03858570231 - All Right Reserved. </span></div>
-                    <div class="col-md-6 text-center text-md-end" style="font-size:0.5rem;"><span> Designed By </span><a href="https://htmlcodex.com">HTML Codex</a><a class="btn btn-link" role="button" href="terms&amp;condition.html">Termini &amp; Condizioni</a></div>
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 text-white">
+                        &copy; <a href="#">MILEGNO SRL</a> - P.I. 03858570231 - All Right Reserved.
+                    </div>
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <div class="col-md-6 text-center text-md-end" style="font-size: 0.5rem;">
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        <a class="btn btn-link" href="terms&condition.html">Termini & Condizioni</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div><a class="btn btn-primary btn-lg rounded-circle btn-lg-square back-to-top" role="button" href="#"><i class="bi bi-arrow-up"></i></a>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/lib/wow/wow.min.js"></script>
-    <script src="assets/js/lib/easing/easing.min.js"></script>
-    <script src="assets/js/lib/waypoints/waypoints.min.js"></script>
-    <script src="assets/js/lib/counterup/counterup.min.js"></script>
-    <script src="assets/js/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/js/lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/js/lib/lightbox/js/lightbox.min.js"></script>
-    <script src="assets/js/js/main.js"></script>
-    <script src="assets/js/js/smart-forms.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
